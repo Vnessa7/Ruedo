@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>El Ruedo Pollos & Parrillas</title>
+	<meta charset="utf-8">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="../js/codigo.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/contactos.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+
+  <link rel="icon" type="image/png" href="../img/icono.jpg">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  
+<body>
+                 
+	<header>
+    <div class="menu">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
+                <div class="menurelativo">         
+                      <li>Atención: 12:00 pm a 11:00 pm</li>
+                      <li>Delivery: (01) 4872860</li>
+                      <li>Reserva: <a class="reserva" href="elruedorestobar@gmail.com">elruedorestobar@gmail.com</a></li>  
+                </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/nosotros.html">Nosotros</a></li>
+                <li><a href="../html/servicios.html">Servicios</a></li>
+                <li><a href="../html/contactos.html">Contáctenos</a></li>
+                <li><a href="../html/login.html">Mi cuenta</a></li>
+            </ul>
+            <script src="../js/menu.js"></script>
+        </div>
+       
+      </header>
+		<figure>
+					<img src="../img/fondo.jpg" alt="Ruedo Pollos & Parrillas" >
+		</figure>		
+       
+
+   
+
+    <main>
+
+      <div class="container text-center titulo">
+      <h2>Haz tu reserva aqui</h2>
+      </div>
+
+    	<div class="empieza-reserva">
+        
+            <form class="formContacto" name="form" action="../php/procesapedidonuevo.php" method="post">
+
+              <div class="row">
+                <div class="col">
+                  <input type="text" name="nombre" placeholder="Ingrese Nombre" maxlength="20" required="" >
+                </div>
+                <div class="col">
+                  <input type="text" name="apellido"placeholder="Apellido" maxlength="30"  required="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label for="">Mensajito :</label>
+                  <textarea name="mensaje" cols="50" rows="5" placeholder="Mensaje" required="" name="mensaje"></textarea>
+                </div>  
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <input type="Tel" name="tele" placeholder="Telefono" pattern="{9}" required="">      
+                </div>  
+              </div>
+              <div class="row">
+
+              </div>
+
+          
+		         <input type="email" placeholder="Email" name="correo" required="">
+               
+             <div class="row">
+               <div class="col">
+                <label for="time">Selecciona la hora:</label>
+                <input type="time" id="appt" name="time" required="">
+               </div>
+               <div class="col">
+                <label for="date">Seleciona la fecha:</label>
+                <input type="date" name="fecha" required="">
+               </div>
+             </div><br>
+             <div class="container text-center enviar"> 
+              <button class="botoncito" type="submit" value="Enviar" onclick="validaForm()" > ENVIAR  </button>
+
+             </div>
+               </form>
+              </div>
+    </main>
+
+    <footer class="text-center footer">
+        <div class="container ">
+            <p class=""> 2013 - 2020 El Ruedo Pollos & Parrillas</p>
+        </div>
+        <div>
+            <p>Siguenos en nuestras redes:</p>
+            <div class="redes">
+                <a href="https://instagram.com/elruedorestobar?igshid=1hxzq7gedq9fh" class="boton"><img src="../icon/instagram.png" class="icon"></a>
+                <a href="https://www.facebook.com/ruedorestobar/?ref=page_internal" class="boton"><img src="../icon/facebook.png" class="icon"></a>
+            </div>
+
+        </div>
+
+
+   </footer>
+</body>
+</html>

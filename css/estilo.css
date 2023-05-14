@@ -1,0 +1,168 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+.login {
+  padding: 0px 5px 5px 0px;
+  text-align: right;
+  font-size: 0.8em;
+  background: white;
+  
+}
+
+.login a:hover {
+  color: #CB1A0E;
+}
+
+.login a {
+  color: black;
+}
+
+body{
+	margin: 0;
+	background: #e8e8e8;
+	font-size: 20px;
+	
+}
+header{
+	width: 100%;
+	/*display: block;*/
+	background-color: #d5352d ;
+}
+#btn-menu{
+	display: none;
+}
+header label{
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+header label :hover{
+	cursor: pointer;
+	background: #d5352d;
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.menu li :hover{
+	background: rgba(0,0,0,0.5);
+ 
+}
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+img{
+    
+    width: 100%;
+    height: 100%;
+	
+}
+/*nav{
+	background-color: #d5352d;
+	padding: 15px;
+
+}
+
+header li{
+	display: inline;
+	padding: 20px;
+	text-transform: uppercase;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+
+nav ul li:hover{
+	background: #000000;
+	padding: 20px 10px;
+	font-size: 20px;
+}*/
+
+
+main{
+ width: 90%;
+ margin: auto;
+}
+main h4{
+	padding: 10px;
+
+}
+.contenedor{
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	
+}
+
+
+.tabla{
+	padding: 15px ;
+
+}
+
+.tabla p{
+	padding: 10px;
+	font-weight: bold;
+}
+iframe{
+	padding: 30px;
+}
+footer{
+	display: block;
+	font-family:candara;
+	padding: 25px;
+	background-color: #d5352d;
+	font-size: 20px;
+	text-indent: 3px;
+	letter-spacing: 5px;
+}
+.boton{
+	display: inline-block;
+	background: #fbe7c5;
+	margin: auto;
+	padding:10px;
+	border-radius: 100px;
+	text-decoration: none;
+	color: black;
+
+
+}
+
+@media (max-width:768px){
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background: black;
+		width: 70%;
+		transition: all 0.5s;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top:1px solid #fff;
+	}
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	} 
+}

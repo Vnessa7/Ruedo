@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background: #e8e8e8;
+    font-size: 20px;
+    
+}
+header{
+    display: block;
+    background-color: #d5352d ;
+}
+img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.menurelativo{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    font-family: candara;
+    align-items: center;
+    font-size: 15px;
+}
+li .reserva {
+      text-decoration: none;
+      color: white;
+}
+
+li .reserva:hover {
+      color: red;
+}
+
+
+#burger-menu{
+    width: 27px;
+    height: 27px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after{
+    background: #CB1A0E;
+    display: block;
+    height: 4px; 
+    position: absolute;
+    transition: all 300ms ease;
+}
+
+#burger-menu span:before,
+#burger-menu span:after{
+    content: '';
+}
+
+#burger-menu span{
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+
+#burger-menu span:before{
+    left: 0px;
+    top: -10px;
+    width: 16px;
+}
+
+#burger-menu span:after{
+    left: 0px;
+    top: 10px;
+    width: 20px;
+}
+
+#burger-menu.close span{
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    background: #d5352e;
+}
+
+
+#burger-menu.close span:before{
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    background: #d5352e;
+}
+
+#burger-menu.close span:after{
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    opacity: 0;
+}
+
+
+#menu{
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    visibility: hidden;
+    transition: all 300ms ease; 
+}
+
+#menu.show{
+    opacity: 1;
+    visibility: visible;
+    padding-top: 100px;
+    background: rgba(0,0,0,0.8);
+}
+
+#menu li{
+    list-style: none;
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+#menu li:hover{
+    letter-spacing: 2px;
+}
+
+#menu li a{
+    color: white;
+    display: block;
+    font-size: 32px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 300ms;
+    
+}
+
+#menu li a:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 300ms;
+}
+
+
+#menu li a:hover:before{
+    opacity: 1;
+    transform: scale(1);
+
+}
+.empieza-reserva{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+
+
+.botoncito  {
+    border-radius: 25px;
+    background-color: #CB1A0E;
+    color: #fbe7c5;
+    border: solid 1px #CB1A0E;
+    font-size: 13px;
+    padding: 15px 15px 13px;
+}
+.enviar{
+    padding: 30px;
+}
+
+.formContacto .row{
+ padding-top: 15px;
+}
+
+
+.titulo h2{
+    padding-top: 20px;
+    font-family: 'Lobster', cursive;
+
+}
+
+form{
+    margin: auto;
+	width:70%;
+	border:1px;
+	padding: 20px;
+	
+}
+
+@media all and (max-width: 600px){
+    form{
+        width:100%;
+   
+    }
+}
+
+label{
+	font-size: 12px;
+	display: flex;
+    width: 100%;
+}
+input, textarea{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	overflow: visible;
+}
+textarea{
+	resize: vertical;
+	max-height: 50px;
+	min-height: 70px;
+
+}
+input[type="submit"]{
+	margin-bottom: 0;
+	background: #1668C4;
+	color: #fff;
+	border:none;
+}
+input[type="submit"]:hover{
+	background: #4A88F4;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+
+footer{
+    text-align: center;
+    font-family: candara;
+    padding: 25px;
+    background-color: #d5352d;
+    font-size: 15px;
+    text-indent: 3px;
+    letter-spacing: 5px;
+}
+.icon{
+    
+    width: 30px;
+    height:30px;
+    text-align: center;
+}
