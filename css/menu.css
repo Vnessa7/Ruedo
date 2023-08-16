@@ -307,9 +307,9 @@ li .reserva:hover {
 }
 footer{
     text-align: center;
-    font-family: candara;
-    background-color: #d5352d;
+    background-color: #000000;
     font-size: 20px;
+    padding-top:1em ;
     text-indent: 3px;
     letter-spacing: 5px;
 }
